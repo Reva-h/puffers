@@ -1,39 +1,53 @@
-:root {
-    --hue: 300; /* Let's try a different hue this time */
-    --hueComplement: calc(var(--hue) + 180);
-    --hueRightAnalogous: calc(var(--hue) + 30);
-    --hueLeftAnalogous: calc(var(--hue) - 30);
-  }
-
 body {
   height: auto;
   width: auto;
-  background-color:rgb(43, 64, 187)
+  background-color:rgb(215, 233, 238);
 }
 .wrapper {
     margin: 5px;
 }
-
-
+.action{
+    border-radius : 5px;
+    font-family: 'Retro Gaming';
+}
+h1 {
+    font-family: 'Pixel Bubbles';
+    font-size: 25px;
+}
 #header {
   height: 40px;
   width: 300px;
-  margin-bottom: 5px;
-  background-color: rgb(246, 130, 130);
-  border-radius : 5px;
+  margin-bottom: 10px;
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 5px;
 }
 #fishtank {
     height: 200px;
     width: 300px;
-    margin-bottom: 5px;
-    background-color: rgb(146, 94, 94);
+    margin-bottom: 10px;
+    background-color: rgb(185, 227, 248);
     border-radius : 10px;
+}
+#fishtank_header {
+    padding: 5px;
+    background-color: rgb(31, 90, 117);
+    border-radius : 10px 10px 0px 0px;
 }
 #chat {
     height: 200px;
     width: 300px;
-    margin-bottom: 5px;
-    background-color: rgb(73, 49, 49);
+    margin-bottom: 10px;
+    background-color: rgb(13, 29, 51);
     border-radius : 10px;
 }
-  
+
+@font-face{
+    font-family: 'Pixel Bubbles';
+    src: url(/fonts/04B_30__.TTF);
+}
+
+@font-face{
+    font-family: 'Retro Gaming';
+    src: url(/fonts/Retro_Gaming.TTF);
+}
+
