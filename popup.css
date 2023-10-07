@@ -1,24 +1,39 @@
+:root {
+    --hue: 300; /* Let's try a different hue this time */
+    --hueComplement: calc(var(--hue) + 180);
+    --hueRightAnalogous: calc(var(--hue) + 30);
+    --hueLeftAnalogous: calc(var(--hue) - 30);
+  }
+
 body {
-    width: 20rem;
-  }
+  height: auto;
+  width: auto;
+  background-color:rgb(43, 64, 187)
+}
+.wrapper {
+    margin: 5px;
+}
+
+
+#header {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 5px;
+  background-color: rgb(246, 130, 130);
+  border-radius : 5px;
+}
+#fishtank {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 5px;
+    background-color: rgb(146, 94, 94);
+    border-radius : 10px;
+}
+#chat {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 5px;
+    background-color: rgb(73, 49, 49);
+    border-radius : 10px;
+}
   
-  ul {
-    list-style-type: none;
-    padding-inline-start: 0;
-    margin: 1rem 0;
-  }
-  
-  li {
-    padding: 0.25rem;
-  }
-  li:nth-child(odd) {
-    background: #80808030;
-  }
-  li:nth-child(even) {
-    background: #ffffff;
-  }
-  
-  h3,
-  p {
-    margin: 0;
-  }
