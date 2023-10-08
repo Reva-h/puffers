@@ -10,11 +10,9 @@ const BOT_MSGS = [
   "I feel sleepy! :("
 ];
 
-// Icons made by Freepik from www.flaticon.com
-const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
-const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-const BOT_NAME = "BOT";
-const PERSON_NAME = "Sajad";
+
+const BOT_NAME = "PUFFERS";
+const PERSON_NAME = "YOU";
 
 msgerForm.addEventListener("submit", event => {
   event.preventDefault();
@@ -22,19 +20,17 @@ msgerForm.addEventListener("submit", event => {
   const msgText = msgerInput.value;
   if (!msgText) return;
 
-  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+  appendMessage(PERSON_NAME, "right", msgText);
   msgerInput.value = "";
 
   botResponse();
 });
 
-function appendMessage(name, img, side, text) {
+function appendMessage(name, side, text) {
   //   Simple solution for small apps
   const msgHTML = `
     <div class="msg ${side}-msg">
-      <div class="msg-img" style="background-image: url(${img})"></div>
-
-      <div class="msg-bubble">
+      <div class="msg-bubble pixel-corners">
         <div class="msg-info">
           <div class="msg-info-name">${name}</div>
           <div class="msg-info-time">${formatDate(new Date())}</div>
@@ -55,7 +51,7 @@ function botResponse() {
   const delay = msgText.split(" ").length * 100;
 
   setTimeout(() => {
-    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+    appendMessage(BOT_NAME, "left", msgText);
   }, delay);
 }
 

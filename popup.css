@@ -13,11 +13,12 @@ body {
 h1 {
     font-family: 'Pixel Bubbles';
     font-size: 25px;
+    margin: 15px 0px 0px 10px;
 }
 #header {
   height: 40px;
   width: 300px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   /* background-color: rgb(255, 255, 255); */
   border-radius: 5px;
 }
