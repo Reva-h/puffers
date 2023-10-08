@@ -23,7 +23,7 @@ msgerForm.addEventListener("submit", event => {
   appendMessage(PERSON_NAME, "right", msgText);
   msgerInput.value = "";
 
-  botResponse();
+  pufferResponse();
 });
 
 function appendMessage(name, side, text) {
@@ -45,7 +45,7 @@ function appendMessage(name, side, text) {
   msgerChat.scrollTop += 500;
 }
 
-function botResponse() {
+function pufferResponse() {
   const r = random(0, BOT_MSGS.length - 1);
   const msgText = BOT_MSGS[r];
   const delay = msgText.split(" ").length * 100;

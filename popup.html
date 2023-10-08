@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./popup.css" />
-    <link rel="stylesheet" href="./pixel-corners.css" />
-    <link rel="stylesheet" href="./chat.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/pixel-corners.css" />
+    <link rel="stylesheet" href="styles/chat.css" />
   </head>
   <body>
+    <script type="module">
+      import { HfInference } from 'https://cdn.jsdelivr.net/npm/@huggingface/inference@2.6.3/+esm';
+      import { createRepo, commit, deleteRepo, listFiles } from "https://cdn.jsdelivr.net/npm/@huggingface/hub@0.8.6/+esm";
+    </script>
         <div class = wrapper>
             <div id="header">
              <h1>Puffers<button href="javascript:void(0)" class="settings"><img src="images/gear_icon.png" width="20px" height=auto> </button></h1>
             </div>
             <div id="fishtank" class="pixel-corners">
                 <div id="fishtank_header">
-                    <button href="javascript:void(0)" class="action">FEED</button>
-                    <button href="javascript:void(0)" class="action">PLAY</button>
-                    <button href="javascript:void(0)" class="action" margin-right=0>?</button>
+                    <button href="javascript:void(0)" class="action"> FEED </button>
+                    <button href="javascript:void(0)" class="action"> PLAY </button>
+                    <button href="javascript:void(0)" class="action" margin-right=0> ? </button>
                 </div>
-                <div id="fishtank_body" class="pixel-corners">
+                <div id="fishtank_body">
+                  <img src="images/puffers@72x.png" width="200px" height = "auto" float="center">
                 </div>
             </div>
             <div id="chat" class="pixel-corners">
@@ -42,27 +47,12 @@
                       </div>
               
                       <div class="msg-text">
-                        Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+                        Hi, welcome to PufferChat! Ask me anything! 😄
                       </div>
                     </div>
                   </div>
               
                   <div class="msg right-msg">
-                    <!-- <div
-                     class="msg-img"
-                     style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
-                    ></div> -->
-              
-                    <div class="msg-bubble  pixel-corners">
-                      <div class="msg-info">
-                        <div class="msg-info-name">YOU</div>
-                        <div class="msg-info-time">12:46</div>
-                      </div>
-              
-                      <div class="msg-text">
-                        You can change your name in JS section!
-                      </div>
-                    </div>
                   </div>
                 </main>
               

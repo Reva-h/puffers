@@ -2,12 +2,16 @@ body {
   height: auto;
   width: auto;
   background-color:rgb(215, 233, 238);
+  padding:10px;
+  outline: 10px solid black;
+  outline-offset: -3px;
 }
 .wrapper {
     margin: 5px;
 }
 .action{
     border-radius : 5px;
+    padding: 2px 4px 2px 4px;
     font-family: 'Retro Gaming';
 }
 h1 {
@@ -27,6 +31,7 @@ h1 {
     width: 300px;
     margin-bottom: 10px;
     background-color: rgb(185, 227, 248);
+    background-image: url('../images/water_pixels.jpg');
     border-radius : 10px;
 }
 #fishtank_header {
@@ -37,7 +42,7 @@ h1 {
 #chat {
     height: 200px;
     width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: rgb(13, 29, 51);
     border-radius : 10px;
 }
