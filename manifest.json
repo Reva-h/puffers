@@ -3,7 +3,7 @@
     "name": "Tab Manager for Chrome Dev Docs",
     "version": "1.0",
     "icons": {
-      "64": "images/puffers_icon_64"
+      "64": "images/puffers_icon_64.png"
     },
     "action": {
         "default_popup": "popup.html"
@@ -16,8 +16,8 @@
         "activeTab"
     ],
     "content_security_policy": {
-        "extension_pages": "script-src 'self' 'unsafe-inline'; object-src 'self';",
+        "extension_pages": "script-src 'self'; object-src 'self';",
         "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
-    }
+    }    
         
   }
